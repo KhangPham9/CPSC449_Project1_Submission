@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homepage</title>
+</head>
+<body>
+	<h1>Flaskr</h1>
+	<ul>
+    	<li><a href="{{ url_for('index') }}">Homepage</a>
+	</ul>
+	<form method="post" action="/file/uploaded_file" enctype="multipart/form-data">
+		<label for="file">File Upload</label>
+		<input type="file" name="file">
+	    <input type="submit" value="upload">
+
+	</form>
+</body>
+</html>

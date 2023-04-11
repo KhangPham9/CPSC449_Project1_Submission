@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homepage</title>
+</head>
+<body>
+	<h1>Flaskr</h1>
+	<ul>
+    	<li><a href="{{ url_for('index') }}">Homepage</a>
+		<li><a href="{{ url_for('public.public') }}">Public</a>
+    	<li><a href="{{ url_for('auth.register') }}">Register</a>
+    	<li><a href="{{ url_for('auth.login') }}">Log In</a>
+    	<li><a href="{{ url_for('protected.protected') }}">JWT Login</a>
+    	<li><a href="{{ url_for('file.upload') }}">upload a file</a>
+
+	</ul>
+</body>
+</html>

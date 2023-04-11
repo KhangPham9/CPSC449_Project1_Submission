@@ -1,0 +1,86 @@
+------------------------- Task -------------------------
+
+Things to keep in mind:
+	- Things do not need to be visually appealing
+	- A working product is more important
+
+Task:
+	Complete the map as much of the component as possible.
+
+
+
+roslibjs Documentation/Reference:
+http://wiki.ros.org/roslibjs/Tutorials/BasicRosFunctionality
+
+react leaflet reference:
+	We use react leaflet v3.
+	https://react-leaflet.js.org/docs/v3/example-layers-control/
+
+
+Files to reference:
+	https://github.com/titan-rover/2022-3_Rover_Code_Base/blob/main/base/ui/web-ui/src/App.js
+
+	https://github.com/titan-rover/2022-3_Rover_Code_Base/blob/main/base/ui/web-ui/src/components/MapTile.js
+Maybe reference
+	https://github.com/titan-rover/2022-3_Rover_Code_Base/blob/main/base/ui/web-ui/src/components/GPS.js
+
+
+
+
+Steps to achieve the task:
+
+	Step 1(prerequisite task): Hook up the GNSS to ROS and read 
+		the GNSS data from the UI. This can be done by printing
+		 it to the console or displaying it to the screen.
+
+		I will show you how to setup the GNSS and hook it
+		up to ROS. 
+
+	 	
+
+	Step 2:  Display the GNSS data(longitude and latitude) on
+		the UI, if it hasn't already been done. Ideally,
+		we can overlay it on the map. We use the leaflet library.
+	 
+
+		Acceptance criteria:
+			The longitude and latitude is overlayed on the map or
+			else where on the UI.
+	
+
+ 	Step 3: Make the icon on the map move as the GNSS moves.
+		There should already be code for this, but it needs to be
+		tested. 
+
+		How to test the code. Bring your laptop + GNSS outside and
+		walk around campus and see if the map updates properly.
+
+
+
+		Acceptance Criteria:
+			The map puts the icon on the correct position based on
+			GNSS latitude and longitude.
+
+	Step 4: Test the rotation of the icon. This requires hooking up
+		the IMU with the UI. I'm not sure how to hook up the IMU, but
+		the IMU topic should be complete. Probably ask Angar for 
+		instructions about this. There is kind of previous code to
+		to subscribe to the data but I think it is wrong. However, the
+		code to rotate the icon itself should be there.
+	
+
+		Acceptance criteria:
+			The icon points in the correct direction based on the IMU yaw.
+
+	Step 5: Detecting aruco tags and displaying them as markers. 
+		There should be some code to put markers on the map, but 
+		the ROS side has to be created from scratch.
+
+
+		Acceptance criteria:
+			A marker appears on the map when an aruco tag is seen and
+			we can click on the marker and have it display the 
+			latitude and longitude of the marker.
+
+
+

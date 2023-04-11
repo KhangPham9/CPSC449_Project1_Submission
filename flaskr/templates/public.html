@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>This is the public endpoint</title>
+</head>
+<body>
+	<h1>Flaskr</h1>
+	<p>Here are a list of the endpoints that don't require
+		authentication </p>
+	<ul>
+    	<li><a href="{{ url_for('index') }}">Homepage</a>
+		<li><a href="{{ url_for('public.public') }}">Public</a>
+    	<li><a href="{{ url_for('auth.register') }}">Register</a>
+    	<li><a href="{{ url_for('auth.login') }}">Log In</a>
+
+	</ul>
+</body>
+</html>
